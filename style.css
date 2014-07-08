@@ -27,6 +27,7 @@ and Blueprint http://www.blueprintcss.org/
 ----------------------------------------------------------------
 1.0 - Reset
 2.0 - Typography
+2.5 - Grid
 3.0 - Elements
 4.0 - Forms
 5.0 - Navigation
@@ -44,6 +45,7 @@ and Blueprint http://www.blueprintcss.org/
 12.0 - Media
 	12.1 - Captions
 	12.2 - Galleries
+13.0 Styles
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -198,6 +200,385 @@ small {
 big {
 	font-size: 125%;
 }
+/*--------------------------------------------------------------
+2.5 Grid
+---------------------------------------------------------------*/
+
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 996px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 996px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .grid_1 {
+	width:65px;
+}
+
+.container_12 .grid_2 {
+	width:148px;
+}
+
+.container_12 .grid_3 {
+	width:231px;
+}
+
+.container_12 .grid_4 {
+	width:314px;
+}
+
+.container_12 .grid_5 {
+	width:397px;
+}
+
+.container_12 .grid_6 {
+	width:480px;
+}
+
+.container_12 .grid_7 {
+	width:563px;
+}
+
+.container_12 .grid_8 {
+	width:646px;
+}
+
+.container_12 .grid_9 {
+	width:729px;
+}
+
+.container_12 .grid_10 {
+	width:812px;
+}
+
+.container_12 .grid_11 {
+	width:895px;
+}
+
+.container_12 .grid_12 {
+	width:978px;
+}
+
+
+
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .prefix_1 {
+	padding-left:83px;
+}
+
+.container_12 .prefix_2 {
+	padding-left:166px;
+}
+
+.container_12 .prefix_3 {
+	padding-left:249px;
+}
+
+.container_12 .prefix_4 {
+	padding-left:332px;
+}
+
+.container_12 .prefix_5 {
+	padding-left:415px;
+}
+
+.container_12 .prefix_6 {
+	padding-left:498px;
+}
+
+.container_12 .prefix_7 {
+	padding-left:581px;
+}
+
+.container_12 .prefix_8 {
+	padding-left:664px;
+}
+
+.container_12 .prefix_9 {
+	padding-left:747px;
+}
+
+.container_12 .prefix_10 {
+	padding-left:830px;
+}
+
+.container_12 .prefix_11 {
+	padding-left:913px;
+}
+
+
+
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .suffix_1 {
+	padding-right:83px;
+}
+
+.container_12 .suffix_2 {
+	padding-right:166px;
+}
+
+.container_12 .suffix_3 {
+	padding-right:249px;
+}
+
+.container_12 .suffix_4 {
+	padding-right:332px;
+}
+
+.container_12 .suffix_5 {
+	padding-right:415px;
+}
+
+.container_12 .suffix_6 {
+	padding-right:498px;
+}
+
+.container_12 .suffix_7 {
+	padding-right:581px;
+}
+
+.container_12 .suffix_8 {
+	padding-right:664px;
+}
+
+.container_12 .suffix_9 {
+	padding-right:747px;
+}
+
+.container_12 .suffix_10 {
+	padding-right:830px;
+}
+
+.container_12 .suffix_11 {
+	padding-right:913px;
+}
+
+
+
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .push_1 {
+	left:83px;
+}
+
+.container_12 .push_2 {
+	left:166px;
+}
+
+.container_12 .push_3 {
+	left:249px;
+}
+
+.container_12 .push_4 {
+	left:332px;
+}
+
+.container_12 .push_5 {
+	left:415px;
+}
+
+.container_12 .push_6 {
+	left:498px;
+}
+
+.container_12 .push_7 {
+	left:581px;
+}
+
+.container_12 .push_8 {
+	left:664px;
+}
+
+.container_12 .push_9 {
+	left:747px;
+}
+
+.container_12 .push_10 {
+	left:830px;
+}
+
+.container_12 .push_11 {
+	left:913px;
+}
+
+
+
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .pull_1 {
+	left:-83px;
+}
+
+.container_12 .pull_2 {
+	left:-166px;
+}
+
+.container_12 .pull_3 {
+	left:-249px;
+}
+
+.container_12 .pull_4 {
+	left:-332px;
+}
+
+.container_12 .pull_5 {
+	left:-415px;
+}
+
+.container_12 .pull_6 {
+	left:-498px;
+}
+
+.container_12 .pull_7 {
+	left:-581px;
+}
+
+.container_12 .pull_8 {
+	left:-664px;
+}
+
+.container_12 .pull_9 {
+	left:-747px;
+}
+
+.container_12 .pull_10 {
+	left:-830px;
+}
+
+.container_12 .pull_11 {
+	left:-913px;
+}
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}
+
 
 /*--------------------------------------------------------------
 3.0 Elements
@@ -675,3 +1056,461 @@ object {
 	max-width: 11.11%;
 }
 .gallery-caption {}
+
+/*------------------------------------
+13.0 Styles
+--------------------------------------*/
+
+/*--------------------------------------------------------------
+12.1 Slider
+--------------------------------------------------------------*/
+/*
+*   CUSTOM CONTROLS
+*/
+.example-using-html .devrama-slider .button-slider{
+    background-color: #0072BB;
+    padding: 0.4em 0.8em;
+    border-radius: 0.4em;
+    border: 1px solid #CCC;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
+    color: #FFF !important;
+    text-decoration: none;
+    line-height: 1.2em;
+    cursor: pointer;
+}
+ 
+.example-using-html .devrama-slider .button-slider:hover{
+    background-color: #3794CF;
+}
+ 
+.example-using-html .devrama-slider .button-previous {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+ 
+.example-using-html .devrama-slider .button-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+ 
+/*
+*   CUSTOM NAVIGATION
+*/
+.example-using-html .devrama-slider .navigation {
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+}
+ 
+.example-using-html .devrama-slider .navigation .inner .nav-link {
+    background-color: #1C1C1D;
+    border-radius: 3px;
+    padding: 8px;
+    color: #FFF;
+    margin-right: 5px;
+    cursor: pointer;
+}
+ 
+.example-using-html .devrama-slider .navigation .inner .nav-link:hover {
+    background-color: #3A3A3A;
+}
+ 
+.example-using-html .devrama-slider .navigation .inner .nav-link.active {
+    background-color: #FFF;
+    color: #000;
+}
+ 
+/*
+*   CUSTOM PROGRESS BAR
+*/
+.example-using-html .devrama-slider .slider-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+ 
+.example-using-html .devrama-slider .slider-progress .bar {
+    background-color: rgba(20, 61, 146, 0.61);
+}
+
+.my-navigation span.active {
+    border-bottom: 2px solid #586FA4;
+    cursor: default;
+}
+.my-navigation {
+    margin: 0 auto;
+    text-align: center;
+}
+.my-navigation span {
+    cursor: pointer;
+    padding-bottom: 10px;
+
+}
+.slider-nav {
+    color: #fff;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -26px;
+    position: absolute;
+    z-index: 99;
+}
+a.go-previous,a.go-next {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: monospace;
+    line-height: 0.9;
+    font-weight: bold;
+}
+
+.feeback-icon {
+    text-align: center;
+}
+
+.post-catalog-page {
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* вкладки */
+/*
+* jQueryTab v2.0
+* Copyright Dharma Poudel (@rogercomred)
+* Free to use under the GPLv3 license.
+* http://www.gnu.org/licenses/gpl-3.0.html
+* This file contains the classes for animation transition.
+*/
+
+/* fade */
+.fadeIn{
+  opacity: 1;
+  transition-delay: .3s;
+}
+.fadeOut{
+  opacity: 0;
+}
+/* slideDown */
+.slideDownIn {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideDownOut {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* slideUp */
+.slideUpIn {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideUpOut {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* slideRight */
+.slideRightScaleDownIn {
+  -webkit-transform: translateX(0) scale(1);
+  -moz-transform: translateX(0) scale(1);
+  -ms-transform: translateX(0) scale(1);
+  -o-transform: translateX(0) scale(1);
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideRightScaleDownOut {
+  -webkit-transform: translateX(100%) scale(0.1) translateX(0);
+  -moz-transform: translateX(100%) scale(0.1) translateX(0);
+  -ms-transform: translateX(100%) scale(0.1) translateX(0);
+  -o-transform: translateX(100%) scale(0.1) translateX(0);
+  transform: translateX(100%) scale(0.1) translateX(0);
+  opacity: 0;
+}
+
+/* slideLeft */
+.slideLeftIn {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideLeftOut {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* slideRightToLeft */
+.slideRightIn {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.slideRightOut {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation-direction:alternate-inverse;
+  -moz-animation-direction:alternate-inverse;
+  animation-direction:alternate-inverse;
+  opacity: 0;
+}
+
+/* flip */
+.flipIn {
+  -webkit-transform: rotatey(0deg) scale(1);
+  -moz-transform: rotatey(0deg) scale(1);
+  -ms-transform: rotatey(0deg) scale(1);
+  -o-transform: rotatey(0deg) scale(1);
+  transform: rotatey(0deg) scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.flipOut {
+  -webkit-transform: rotatey(-90deg) scale(1.1);
+  -moz-transform: rotatey(-90deg) scale(1.1);
+  -ms-transform: rotatey(-90deg) scale(1.1);
+  -o-transform: rotatey(-90deg) scale(1.1);
+  transform: rotatey(-90deg) scale(1.1);
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+/* rotate */
+.rotateIn {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.rotateOut {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+  opacity: 0;
+}
+/* swingRight */
+.swingRightIn {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.swingRightOut {
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+/* swingLeft */
+.swingLeftIn {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.swingLeftOut {
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 0;
+}
+/* scaleDown */
+.scaleDownIn {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.scaleDownOut {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(.3);
+  -moz-transform: scale(.3);
+  -ms-transform: scale(.3);
+  -o-transform: scale(.3);
+  transform: scale(.3);
+  opacity: 0;
+}
+/* scaleUp */
+.scaleUpIn {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  transition-delay: .3s;
+}
+
+.scaleUpOut {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+/*
+* jQueryTab v2.0
+* Copyright Dharma Poudel (@rogercomred)
+* Free to use under the GPLv3 license.
+* http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+
+/*  == tab heading */
+.tabs {overflow:hidden; }
+ul.tabs{margin: 0;}
+.tabs li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 20px 0 0;
+}
+.tabs li a{ display:block;}
+.tabs li:first-child a{}
+.tabs li a:hover, .tabs li a:focus{  }
+.tabs .active a{ color: #000; }
+
+/* == accordion */
+.accordion_tabs { display:none; border-top: 1px solid #ccc; padding: 10px; font-weight: bold; background: #eee; }
+.tab_content_wrapper > .accordion_tabs:first-child{ border-top:none; }
+a.accordion_tabs:link, a.accordion_tabs:visited{ color: #21759B; }
+a.accordion_tabs:hover, a.accordion_tabs:focus{ color:#D54E21; }
+a.accordion_tabs.active{ color: #000; border-bottom: 1px solid #ccc;}
+
+/*  == tab content  */
+.tab_content_wrapper{ overflow:hidden;  position:relative; transition: all .3s ease-in-out .3s; }
+.tab_content{ transition: all .6s ease-in-out; padding:15px;}
+.toggle_display{display:block;}
+.toggle_position{ position:absolute; }
+
+/* Media Queries
+***********************/
+@media screen and (max-width: 600px) {
+  #container{ width:90%; padding:40px 20px; }
+  .accordion_tabs{ display:block; }
+  .tab_content_wrapper{ height:auto !important;}
+  .tab_content{ transition:none; padding:10px;}
+  .toggle_display{display:none;}
+  .toggle_position{ position:relative; }
+  .toggle_border{ border-width: 1px; }
+}
+
+.slider-nav{}
+.left-null{margin-left: 0;}
+.right-null{margin-right: 0;}
+.oneee{}
+.twooo{}
+.threee{}
